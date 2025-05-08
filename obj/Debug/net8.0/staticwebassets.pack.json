@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\Index.html",
+      "PackagePath": "staticwebassets\\Index.html"
+    },
+    {
       "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
@@ -75,10 +79,6 @@
     {
       "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
       "PackagePath": "staticwebassets\\img\\usuario_03.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\index.html",
-      "PackagePath": "staticwebassets\\index.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SaborDoBrasil.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,198 +1,208 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sabor do Brasil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .linha-laranja { height: 4px; background-color: #D97014; margin: 10px 0; }
+    .perfil-img { border-radius: 50%; width: 80px; height: 80px; object-fit: cover; }
+    .btn-login, .btn-comentar, .btn-atualizar { background-color: #D97014; color: white; font-weight: bold; border: none; }
+    .btn-comentar:disabled, .btn-atualizar:disabled { opacity: 0.6; cursor: not-allowed; }
+    .icon { width: 20px; cursor: pointer; }
+    .footer-custom {
+      background-color: #D97014;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .comentario-usuario {
+      position: relative;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .comentario-usuario .acoes {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+    .comentario-usuario .acoes img {
+      margin-left: 5px;
+    }
+  </style>
 </head>
-
-<body>
-  <main>
-    <div class="container-fluid">
-      <div class="row min-vh-100">
-        <div id="perfilArea" class="col-md-2 sidebar py-4 text-center">
-          <img src="img/logo_sabor_do_brasil.png" alt="Logo" class="logo" />
-          <h5 class="mt-2">Sabor do Brasil</h5>
-          <div class="linha-laranja"></div>
-          <p><strong>9</strong><br />Quantidade Likes</p>
-          <p><strong>12</strong><br />Quantidade Dislikes</p>
-        </div>
-
-        <div class="col-md-8 main-content py-3">
-          <h5 class="text-center fw-bold text-black">Publicações</h5>
-
-          <div class="publicacao">
-            <h6 class="fw-bold">Título do prato 01</h6>
-            <img src="img/publicacao01.png" alt="Prato 01" />
-            <div class="d-flex justify-content-between mt-1">
-              <small>Local 01</small>
-              <small>Maceió - AL</small>
-            </div>
-            <div class="mt-2">
-              <i class="bi bi-hand-thumbs-up" onclick="mostrarLogin()"></i> 2
-              <i class="bi bi-hand-thumbs-down" onclick="mostrarLogin()"></i> 1
-              <i class="bi bi-chat" onclick="mostrarLogin()"></i> 4
-            </div>
-          </div>
-
-          <div class="publicacao mt-4">
-            <h6 class="fw-bold">Título do prato 02</h6>
-            <img src="img/publicacao02.png" alt="Prato 02" />
-            <div class="d-flex justify-content-between mt-1">
-              <small>Local 02</small>
-              <small>Maceió - AL</small>
-            </div>
-            <div class="mt-2">
-              <i class="bi bi-hand-thumbs-up" onclick="mostrarLogin()"></i> 9
-              <i class="bi bi-hand-thumbs-down" onclick="mostrarLogin()"></i> 1
-              <i class="bi bi-chat" onclick="mostrarLogin()"></i> 10
-            </div>
-          </div>
-
-          <div class="publicacao mt-4">
-            <h6 class="fw-bold">Título do prato 03</h6>
-            <img src="img/publicacao03.png" alt="Prato 03" />
-            <div class="d-flex justify-content-between mt-1">
-              <small>Local 03</small>
-              <small>Maceió - AL</small>
-            </div>
-            <div class="mt-2">
-              <i class="bi bi-hand-thumbs-up" onclick="mostrarLogin()"></i> 2
-              <i class="bi bi-hand-thumbs-down" onclick="mostrarLogin()"></i> 1
-              <i class="bi bi-chat" onclick="mostrarLogin()"></i> 2
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-2 login-area d-flex align-items-start justify-content-center pt-4">
-          <button class="btn-login" onclick="mostrarLogin()">Entrar</button>
+<body class="d-flex flex-column min-vh-100">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 p-3 text-center border-end">
+        <img id="imagemPerfil" src="img/logo/logo_sabor_do_brasil.png" alt="Logo" class="perfil-img">
+        <h5 id="nomeUsuario" class="mt-3">Sabor do Brasil</h5>
+        <div class="linha-laranja"></div>
+        <div class="d-flex justify-content-center mt-3 gap-4">
+          <div><strong id="totalLikes">2</strong><br><small>Likes</small></div>
+          <div><strong id="totalDislikes">1</strong><br><small>Deslikes</small></div>
         </div>
       </div>
-    </div>
-  </main>
 
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4">
-        <h5 class="text-center mb-3">Login</h5>
-        <input id="emailInput" type="email" class="form-control mb-2" placeholder="Digite seu e-mail" />
-        <input id="senhaInput" type="password" class="form-control mb-3" placeholder="Digite sua senha" />
-        <div id="erroLogin" class="text-danger small mb-2" style="display:none;">Usuário ou senha incorreto</div>
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
-          <small class="ms-2">Não tem uma conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a></small>
-          <button class="btn btn-entrar" onclick="validarLogin()">Entrar</button>
-        </div>
+      <div class="col-md-6 p-3">
+        <h4 class="text-center fw-bold">Publicações</h4>
+        <div id="publicacoes"></div>
+      </div>
+
+      <div class="col-md-3 p-3 text-center">
+        <button class="btn btn-login" onclick="mostrarLogin()">Entrar</button>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="cadastroModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4">
-        <h5 class="text-center mb-3">Cadastro</h5>
-        <input id="cadastroNome" type="text" class="form-control mb-2" placeholder="Nome de usuário" />
-        <input id="cadastroEmail" type="email" class="form-control mb-2" placeholder="E-mail" />
-        <input id="cadastroSenha" type="password" class="form-control mb-2" placeholder="Senha" />
-        <input id="cadastroFoto" type="file" accept="image/*" class="form-control mb-3" />
-        <div class="d-flex justify-content-between">
-          <button class="btn btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
-          <button class="btn btn-entrar" onclick="salvarCadastro()">Salvar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-success">
-        <div class="modal-header bg-success text-white">
-          <h5 class="modal-title">Login Bem-sucedido</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="card border-success">
-            <div class="card-body text-success">
-              <h5 class="card-title">Login realizado com sucesso</h5>
-              <p class="card-text">Você será redirecionado em instantes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer-custom">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-sm">
-          <h5>Sabor do Brasil</h5>
-        </div>
-        <div class="col-sm text-center">
-          <i class="bi bi-instagram icone-svg-footer mx-2"></i>
-          <i class="bi bi-twitter-x icone-svg-footer mx-2"></i>
-          <i class="bi bi-whatsapp icone-svg-footer mx-2"></i>
-          <i class="bi bi-globe icone-svg-footer mx-2"></i>
-        </div>
-        <div class="col-sm text-end">
-          <h5>Copyright - 2024</h5>
-        </div>
-      </div>
-    </div>
+  <footer class="footer-custom mt-auto">
+    Sabor do Brasil
+    <img src="img/icones/Instagram.svg" class="icon mx-1">
+    <img src="img/icones/Twitter.svg" class="icon mx-1">
+    <img src="img/icones/Whatsapp.svg" class="icon mx-1">
+    <img src="img/icones/Globe.svg" class="icon mx-1">
+    Copyright - 2024
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Usuário">
+        <input type="password" id="senhaInput" class="form-control mb-3" placeholder="Senha">
+        <button class="btn btn-primary w-100" onclick="logarUsuario()">Entrar</button>
+      </div>
+    </div></div>
+  </div>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    let logado = false;
+    let usuarioLogado = "";
+    let interacao = {};
+
+    const publicacoes = [
+      { id: 1, titulo: "Título do prato 01", imagem: "img/publicacao/publicacao01.png", local: "Local 01", cidade: "Maceió-AL", likes: 2, dislikes: 1, comentarios: [ { usuario: "usuario_01", texto: "Muito saboroso!" } ] },
+      { id: 2, titulo: "Título do prato 02", imagem: "img/publicacao/publicacao02.png", local: "Local 02", cidade: "Maceió-AL", likes: 1, dislikes: 0, comentarios: [ { usuario: "usuario_02", texto: "Delícia!" } ] },
+      { id: 3, titulo: "Título do prato 03", imagem: "img/publicacao/publicacao03.png", local: "Local 03", cidade: "Maceió-AL", likes: 2, dislikes: 1, comentarios: [ { usuario: "usuario_03", texto: "Uma explosão de sabor!" } ] }
+    ];
+
     function mostrarLogin() {
-      const modal = new bootstrap.Modal(document.getElementById('loginModal'));
-      document.getElementById('emailInput').classList.remove('input-error');
-      document.getElementById('senhaInput').classList.remove('input-error');
-      document.getElementById('erroLogin').style.display = 'none';
+      const modal = new bootstrap.Modal(document.getElementById("loginModal"));
       modal.show();
     }
 
-    function mostrarCadastro() {
-      const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
-      loginModal.hide();
-      const cadastroModal = new bootstrap.Modal(document.getElementById('cadastroModal'));
-      cadastroModal.show();
+    function logarUsuario() {
+      const usuario = document.getElementById("usuarioInput").value;
+      const senha = document.getElementById("senhaInput").value;
+      if (usuario && senha) {
+        logado = true;
+        usuarioLogado = usuario;
+        const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+        modal.hide();
+        document.getElementById("imagemPerfil").src = "img/foto_usuario/usuario_01.jpg";
+        document.getElementById("nomeUsuario").textContent = usuario;
+        alert("Login realizado com sucesso!");
+      }
     }
 
-    function salvarCadastro() {
-      const nome = document.getElementById('cadastroNome').value;
-      const email = document.getElementById('cadastroEmail').value;
-      const senha = document.getElementById('cadastroSenha').value;
-      const fotoInput = document.getElementById('cadastroFoto');
+    function renderizarPublicacoes() {
+      const container = document.getElementById("publicacoes");
+      container.innerHTML = "";
+      publicacoes.forEach(pub => {
+        const div = document.createElement("div");
+        div.className = "card mb-3";
+        div.innerHTML = `
+          <div class="card-body p-2">
+            <h5 class="fw-bold">${pub.titulo}</h5>
+            <img src="${pub.imagem}" class="card-img-top mb-2" onclick="abrirComentarios(${pub.id})">
+            <p class="mb-1 d-flex justify-content-between">
+              <span>${pub.local}</span><span>${pub.cidade}</span>
+            </p>
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <img id="likeIcon${pub.id}" src="img/icones/like_vazia.svg" class="icon" onclick="interagir('like', ${pub.id})">
+              <span id="likeCount${pub.id}">${pub.likes}</span>
+              <img id="dislikeIcon${pub.id}" src="img/icones/deslike_vazia.svg" class="icon" onclick="interagir('dislike', ${pub.id})">
+              <span id="dislikeCount${pub.id}">${pub.dislikes}</span>
+              <img src="img/icones/chat.svg" class="icon" onclick="abrirComentarios(${pub.id})">
+              <span id="commentCount${pub.id}">${pub.comentarios.length}</span>
+            </div>
+            <div id="comentarios${pub.id}" style="display:none">
+              ${pub.comentarios.map((c, i) => `
+                <div class="comentario-usuario">
+                  <strong>${c.usuario}:</strong> <span id="comentarioTexto${pub.id}_${i}">${c.texto}</span>
+                  ${c.usuario === usuarioLogado ? `
+                  <div class="acoes">
+                    <img src="img/icones/lapis_editar.svg" class="icon" style="color:white" onclick="editarComentario(${pub.id}, ${i})">
+                    <img src="img/icones/lixeira_deletar.svg" class="icon" style="color:red" onclick="excluirComentario(${pub.id}, ${i})">
+                  </div>` : ""}
+                </div>`).join('')}
+              <textarea class="form-control mb-2" id="comentarioInput${pub.id}" oninput="habilitarBotao(${pub.id})" placeholder="Digite seu comentário"></textarea>
+              <button class="btn btn-sm btn-comentar" id="btnComentar${pub.id}" onclick="comentar(${pub.id})" disabled>Comentar</button>
+            </div>
+          </div>`;
+        container.appendChild(div);
+      });
+    }
 
-      if (!nome || !email || !senha) {
-        alert('Preencha todos os campos obrigatórios.');
-        return;
-      }
+    function interagir(tipo, id) {
+      if (!logado) return mostrarLogin();
+      const likeEl = document.getElementById(`likeCount${id}`);
+      const dislikeEl = document.getElementById(`dislikeCount${id}`);
+      const likeIcon = document.getElementById(`likeIcon${id}`);
+      const dislikeIcon = document.getElementById(`dislikeIcon${id}`);
+      const totalLikes = document.getElementById('totalLikes');
+      const totalDislikes = document.getElementById('totalDislikes');
 
-      const file = fotoInput.files[0];
+      if (!interacao[id]) interacao[id] = null;
 
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          const fotoBase64 = e.target.result;
-          const usuario = { nome, email, senha, foto: fotoBase64 };
-          localStorage.setItem('usuario', JSON.stringify(usuario));
-          alert('Cadastro realizado com sucesso!');
-          const cadastroModal = bootstrap.Modal.getInstance(document.getElementById('cadastroModal'));
-          cadastroModal.hide();
-        };
-        reader.readAsDataURL(file);
+      if (tipo === 'like') {
+        if (interacao[id] === 'like') {
+          likeEl.textContent--;
+          totalLikes.textContent--;
+          likeIcon.src = 'img/icones/like_vazia.svg';
+          interacao[id] = null;
+        } else {
+          if (interacao[id] === 'dislike') {
+            dislikeEl.textContent--;
+            totalDislikes.textContent--;
+            dislikeIcon.src = 'img/icones/deslike_vazia.svg';
+          }
+          likeEl.textContent++;
+          totalLikes.textContent++;
+          likeIcon.src = 'img/icones/like_cheia.svg';
+          interacao[id] = 'like';
+        }
       } else {
-        alert('Selecione uma foto para continuar.');
+        if (interacao[id] === 'dislike') {
+          dislikeEl.textContent--;
+          totalDislikes.textContent--;
+          dislikeIcon.src = 'img/icones/deslike_vazia.svg';
+          interacao[id] = null;
+        } else {
+          if (interacao[id] === 'like') {
+            likeEl.textContent--;
+            totalLikes.textContent--;
+            likeIcon.src = 'img/icones/like_vazia.svg';
+          }
+          dislikeEl.textContent++;
+          totalDislikes.textContent++;
+          dislikeIcon.src = 'img/icones/deslike_cheia.svg';
+          interacao[id] = 'dislike';
+        }
       }
     }
 
-      function abrirComentarios(id) {
+
+    function abrirComentarios(id) {
+
       if (!logado) return mostrarLogin();
       const secao = document.getElementById(`comentarios${id}`);
       secao.style.display = secao.style.display === "none" ? "block" : "none";
@@ -237,5 +247,6 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
+
 </html>
 
