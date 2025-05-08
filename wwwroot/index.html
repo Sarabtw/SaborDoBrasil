@@ -1,252 +1,209 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sabor do Brasil</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { background-color: #f8f9fa; }
-    .linha-laranja { height: 4px; background-color: #D97014; margin: 10px 0; }
-    .perfil-img { border-radius: 50%; width: 80px; height: 80px; object-fit: cover; }
-    .btn-login, .btn-comentar, .btn-atualizar { background-color: #D97014; color: white; font-weight: bold; border: none; }
-    .btn-comentar:disabled, .btn-atualizar:disabled { opacity: 0.6; cursor: not-allowed; }
-    .icon { width: 20px; cursor: pointer; }
-    .footer-custom {
-      background-color: #D97014;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-    }
-    .comentario-usuario {
-      position: relative;
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    .comentario-usuario .acoes {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-    }
-    .comentario-usuario .acoes img {
-      margin-left: 5px;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 p-3 text-center border-end">
-        <img id="imagemPerfil" src="img/logo/logo_sabor_do_brasil.png" alt="Logo" class="perfil-img">
-        <h5 id="nomeUsuario" class="mt-3">Sabor do Brasil</h5>
-        <div class="linha-laranja"></div>
-        <div class="d-flex justify-content-center mt-3 gap-4">
-          <div><strong id="totalLikes">2</strong><br><small>Likes</small></div>
-          <div><strong id="totalDislikes">1</strong><br><small>Deslikes</small></div>
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <div class="col-md-2 sidebar py-4">
+          <img id="fotoPerfil" src="img/logo_sabor_do_brasil.png" alt="Foto Perfil" class="logo" />
+          <h5 id="nomeEmpresa" class="mt-2">Sabor do Brasil</h5>
+          <div class="linha-laranja"></div>
+          <p><strong id="likesTotais">0</strong><br />Meus Likes</p>
+          <p><strong id="dislikesTotais">0</strong><br />Meus Dislikes</p>
+        </div>
+
+        <div class="col-md-8 main-content py-3">
+          <h5 class="text-center fw-bold text-black">Publicações</h5>
+          <div id="publicacoes"></div>
+        </div>
+
+        <div class="col-md-2 login-area d-flex align-items-start justify-content-center pt-4">
+          <button class="btn-login fw-bold" onclick="mostrarLogin()">Entrar</button>
         </div>
       </div>
+    </div>
+  </main>
 
-      <div class="col-md-6 p-3">
-        <h4 class="text-center fw-bold">Publicações</h4>
-        <div id="publicacoes"></div>
-      </div>
-
-      <div class="col-md-3 p-3 text-center">
-        <button class="btn btn-login" onclick="mostrarLogin()">Entrar</button>
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <h5 class="text-center mb-3">Login</h5>
+        <input id="emailInput" type="email" class="form-control mb-2" placeholder="Digite seu e-mail" />
+        <input id="senhaInput" type="password" class="form-control mb-3" placeholder="Digite sua senha" />
+        <div id="erroLogin" class="text-danger small mb-2" style="display:none;">Usuário ou senha incorreto</div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-outline-warning" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-warning text-white" onclick="validarLogin()">Entrar</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer class="footer-custom mt-auto">
-    Sabor do Brasil
-    <img src="img/icones/Instagram.svg" class="icon mx-1">
-    <img src="img/icones/Twitter.svg" class="icon mx-1">
-    <img src="img/icones/Whatsapp.svg" class="icon mx-1">
-    <img src="img/icones/Globe.svg" class="icon mx-1">
-    Copyright - 2024
+  <!-- Rodapé -->
+  <footer class="footer-custom text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">Sabor do Brasil</div>
+        <div class="col-sm">
+          <i class="bi bi-instagram mx-2"></i>
+          <i class="bi bi-twitter-x mx-2"></i>
+          <i class="bi bi-whatsapp mx-2"></i>
+          <i class="bi bi-globe mx-2"></i>
+        </div>
+        <div class="col-sm">Copyright - 2024</div>
+      </div>
+    </div>
   </footer>
 
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog"><div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body">
-        <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Usuário">
-        <input type="password" id="senhaInput" class="form-control mb-3" placeholder="Senha">
-        <button class="btn btn-primary w-100" onclick="logarUsuario()">Entrar</button>
-      </div>
-    </div></div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    let logado = false;
-    let usuarioLogado = "";
-    let interacao = {};
-
-    const publicacoes = [
-      { id: 1, titulo: "Título do prato 01", imagem: "img/publicacao/publicacao01.png", local: "Local 01", cidade: "Maceió-AL", likes: 2, dislikes: 1, comentarios: [ { usuario: "usuario_01", texto: "Muito saboroso!" } ] },
-      { id: 2, titulo: "Título do prato 02", imagem: "img/publicacao/publicacao02.png", local: "Local 02", cidade: "Maceió-AL", likes: 1, dislikes: 0, comentarios: [ { usuario: "usuario_02", texto: "Delícia!" } ] },
-      { id: 3, titulo: "Título do prato 03", imagem: "img/publicacao/publicacao03.png", local: "Local 03", cidade: "Maceió-AL", likes: 2, dislikes: 1, comentarios: [ { usuario: "usuario_03", texto: "Uma explosão de sabor!" } ] }
+    const mockInteracoes = JSON.parse(localStorage.getItem("interacoes")) || {};
+    const mockUser = { id: 1, nome: "Usuário Teste", foto: "img/logo/logo_sabor_do_brasil.png" };
+    const mockPublicacoes = JSON.parse(localStorage.getItem("mockPublicacoes")) || [
+      { id: 1, titulo: "Prato 01", img: "img/publicacao/publicacao01.png", local: "Local 01", cidade: "Maceió - AL", likes: 2, dislikes: 1, comentarios: 0 },
+      { id: 2, titulo: "Prato 02", img: "img/publicacao/publicacao02.png", local: "Local 02", cidade: "Maceió - AL", likes: 5, dislikes: 0, comentarios: 1 }
     ];
 
+    document.addEventListener("DOMContentLoaded", () => {
+      const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+      if (user) atualizarParaUsuarioLogado(user);
+      carregarPublicacoes();
+    });
+
     function mostrarLogin() {
+      document.getElementById("emailInput").classList.remove("input-error");
+      document.getElementById("senhaInput").classList.remove("input-error");
+      document.getElementById("erroLogin").style.display = "none";
       const modal = new bootstrap.Modal(document.getElementById("loginModal"));
       modal.show();
     }
 
-    function logarUsuario() {
-      const usuario = document.getElementById("usuarioInput").value;
+    function validarLogin() {
+      const email = document.getElementById("emailInput").value;
       const senha = document.getElementById("senhaInput").value;
-      if (usuario && senha) {
-        logado = true;
-        usuarioLogado = usuario;
-        const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
-        modal.hide();
-        document.getElementById("imagemPerfil").src = "img/foto_usuario/usuario_01.jpg";
-        document.getElementById("nomeUsuario").textContent = usuario;
-        alert("Login realizado com sucesso!");
+
+      if (email === "usuario@sabor.com" && senha === "123456") {
+        localStorage.setItem("usuarioLogado", JSON.stringify(mockUser));
+        atualizarParaUsuarioLogado(mockUser);
+        bootstrap.Modal.getInstance(document.getElementById("loginModal")).hide();
+      } else {
+        document.getElementById("erroLogin").style.display = "block";
+        document.getElementById("emailInput").classList.add("input-error");
+        document.getElementById("senhaInput").classList.add("input-error");
       }
     }
 
-    function renderizarPublicacoes() {
+    function atualizarParaUsuarioLogado(user) {
+      document.getElementById("fotoPerfil").src = user.foto;
+      document.getElementById("nomeEmpresa").textContent = user.nome;
+      document.querySelector(".btn-login").textContent = "Sair";
+      document.querySelector(".btn-login").onclick = () => {
+        localStorage.removeItem("usuarioLogado");
+        location.reload();
+      };
+      const likes = Object.values(mockInteracoes).filter(i => i.tipo === "like").length;
+      const dislikes = Object.values(mockInteracoes).filter(i => i.tipo === "dislike").length;
+      document.getElementById("likesTotais").textContent = likes;
+      document.getElementById("dislikesTotais").textContent = dislikes;
+    }
+
+    function carregarPublicacoes() {
       const container = document.getElementById("publicacoes");
       container.innerHTML = "";
-      publicacoes.forEach(pub => {
-        const div = document.createElement("div");
-        div.className = "card mb-3";
-        div.innerHTML = `
-          <div class="card-body p-2">
-            <h5 class="fw-bold">${pub.titulo}</h5>
-            <img src="${pub.imagem}" class="card-img-top mb-2" onclick="abrirComentarios(${pub.id})">
-            <p class="mb-1 d-flex justify-content-between">
-              <span>${pub.local}</span><span>${pub.cidade}</span>
-            </p>
-            <div class="d-flex align-items-center gap-3 mb-2">
-              <img id="likeIcon${pub.id}" src="img/icones/like_vazia.svg" class="icon" onclick="interagir('like', ${pub.id})">
-              <span id="likeCount${pub.id}">${pub.likes}</span>
-              <img id="dislikeIcon${pub.id}" src="img/icones/deslike_vazia.svg" class="icon" onclick="interagir('dislike', ${pub.id})">
-              <span id="dislikeCount${pub.id}">${pub.dislikes}</span>
-              <img src="img/icones/chat.svg" class="icon" onclick="abrirComentarios(${pub.id})">
-              <span id="commentCount${pub.id}">${pub.comentarios.length}</span>
+      mockPublicacoes.forEach(pub => {
+        const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+        const interacao = mockInteracoes[pub.id];
+        const likeIcon = interacao?.tipo === "like" ? "flecha_cima_cheia.svg" : "flecha_cima_vazia.svg";
+        const dislikeIcon = interacao?.tipo === "dislike" ? "flecha_baixo_cheia.svg" : "flecha_baixo_vazia.svg";
+        const likeColor = interacao?.tipo === "like" ? "style='filter: invert(25%) sepia(96%) saturate(5477%) hue-rotate(355deg) brightness(97%) contrast(108%)'" : "";
+        const dislikeColor = interacao?.tipo === "dislike" ? "style='filter: invert(25%) sepia(96%) saturate(5477%) hue-rotate(355deg) brightness(97%) contrast(108%)'" : "";
+
+        container.innerHTML += `
+          <div class="publicacao" data-id="${pub.id}">
+            <h6 class="fw-bold">${pub.titulo}</h6>
+            <img src="${pub.img}" alt="${pub.titulo}" onclick="abrirComentario(${pub.id})" />
+            <div class="d-flex justify-content-between mt-1">
+              <small>${pub.local}</small>
+              <small>${pub.cidade}</small>
             </div>
-            <div id="comentarios${pub.id}" style="display:none">
-              ${pub.comentarios.map((c, i) => `
-                <div class="comentario-usuario">
-                  <strong>${c.usuario}:</strong> <span id="comentarioTexto${pub.id}_${i}">${c.texto}</span>
-                  ${c.usuario === usuarioLogado ? `
-                  <div class="acoes">
-                    <img src="img/icones/lapis_editar.svg" class="icon" style="color:white" onclick="editarComentario(${pub.id}, ${i})">
-                    <img src="img/icones/lixeira_deletar.svg" class="icon" style="color:red" onclick="excluirComentario(${pub.id}, ${i})">
-                  </div>` : ""}
-                </div>`).join('')}
-              <textarea class="form-control mb-2" id="comentarioInput${pub.id}" oninput="habilitarBotao(${pub.id})" placeholder="Digite seu comentário"></textarea>
-              <button class="btn btn-sm btn-comentar" id="btnComentar${pub.id}" onclick="comentar(${pub.id})" disabled>Comentar</button>
+            <div class="mt-2">
+              <img src="img/icones/${likeIcon}" class="icone-svg" onclick="interagir(${pub.id}, 'like')" ${likeColor}/> ${pub.likes}
+              <img src="img/icones/${dislikeIcon}" class="icone-svg" onclick="interagir(${pub.id}, 'dislike')" ${dislikeColor}/> ${pub.dislikes}
+              <img src="img/icones/chat.svg" class="icone-svg" onclick="abrirComentario(${pub.id})" /> ${pub.comentarios}
             </div>
           </div>`;
-        container.appendChild(div);
       });
     }
 
-    function interagir(tipo, id) {
-      if (!logado) return mostrarLogin();
-      const likeEl = document.getElementById(`likeCount${id}`);
-      const dislikeEl = document.getElementById(`dislikeCount${id}`);
-      const likeIcon = document.getElementById(`likeIcon${id}`);
-      const dislikeIcon = document.getElementById(`dislikeIcon${id}`);
-      const totalLikes = document.getElementById('totalLikes');
-      const totalDislikes = document.getElementById('totalDislikes');
+    function interagir(id, tipo) {
+      const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+      if (!user) return mostrarLogin();
+      const pub = mockPublicacoes.find(p => p.id === id);
+      const interacaoAtual = mockInteracoes[id];
 
-      if (!interacao[id]) interacao[id] = null;
-
-      if (tipo === 'like') {
-        if (interacao[id] === 'like') {
-          likeEl.textContent--;
-          totalLikes.textContent--;
-          likeIcon.src = 'img/icones/like_vazia.svg';
-          interacao[id] = null;
-        } else {
-          if (interacao[id] === 'dislike') {
-            dislikeEl.textContent--;
-            totalDislikes.textContent--;
-            dislikeIcon.src = 'img/icones/deslike_vazia.svg';
-          }
-          likeEl.textContent++;
-          totalLikes.textContent++;
-          likeIcon.src = 'img/icones/like_cheia.svg';
-          interacao[id] = 'like';
-        }
+      if (interacaoAtual?.tipo === tipo) {
+        delete mockInteracoes[id];
+        tipo === "like" ? pub.likes-- : pub.dislikes--;
       } else {
-        if (interacao[id] === 'dislike') {
-          dislikeEl.textContent--;
-          totalDislikes.textContent--;
-          dislikeIcon.src = 'img/icones/deslike_vazia.svg';
-          interacao[id] = null;
-        } else {
-          if (interacao[id] === 'like') {
-            likeEl.textContent--;
-            totalLikes.textContent--;
-            likeIcon.src = 'img/icones/like_vazia.svg';
-          }
-          dislikeEl.textContent++;
-          totalDislikes.textContent++;
-          dislikeIcon.src = 'img/icones/deslike_cheia.svg';
-          interacao[id] = 'dislike';
-        }
+        if (interacaoAtual?.tipo === "like") pub.likes--;
+        if (interacaoAtual?.tipo === "dislike") pub.dislikes--;
+        tipo === "like" ? pub.likes++ : pub.dislikes++;
+        mockInteracoes[id] = { userId: user.id, tipo };
       }
+
+      localStorage.setItem("mockPublicacoes", JSON.stringify(mockPublicacoes));
+      localStorage.setItem("interacoes", JSON.stringify(mockInteracoes));
+      atualizarParaUsuarioLogado(user);
+      carregarPublicacoes();
     }
 
+    function abrirComentario(postId) {
+  const user = JSON.parse(localStorage.getItem("usuarioLogado"));
+  if (!user) return mostrarLogin();
+  const pubEl = document.querySelector(`.publicacao[data-id='${postId}']`);
 
-    function abrirComentarios(id) {
+  // Remover componente antigo se já existir
+  const antigo = pubEl.querySelector('.comentario-box');
+  if (antigo) antigo.remove();
 
-      if (!logado) return mostrarLogin();
-      const secao = document.getElementById(`comentarios${id}`);
-      secao.style.display = secao.style.display === "none" ? "block" : "none";
-    }
+  const div = document.createElement('div');
+  div.className = 'comentario-box mt-2';
+  div.innerHTML = `
+    <div class="border p-2 rounded bg-light">
+      <strong>${user.nome}</strong>
+      <textarea class="form-control mt-2" id="comentarioTexto${postId}" rows="2" placeholder="Digite seu comentário..."></textarea>
+      <div class="text-end mt-2">
+        <button class="btn btn-sm" id="btnComentar${postId}" disabled style="background-color: #D97014; color: #fff;">Comentar</button>
+      </div>
+    </div>
+  `;
 
-    function habilitarBotao(id) {
-      const input = document.getElementById(`comentarioInput${id}`);
-      const botao = document.getElementById(`btnComentar${id}`);
-      botao.disabled = input.value.trim() === "";
-    }
+  pubEl.appendChild(div);
 
-    function comentar(id) {
-      const input = document.getElementById(`comentarioInput${id}`);
-      const texto = input.value.trim();
-      if (texto !== "") {
-        const comentario = { usuario: usuarioLogado, texto };
-        const pub = publicacoes.find(p => p.id === id);
-        pub.comentarios.push(comentario);
-        renderizarPublicacoes();
-      }
-    }
+  const textarea = div.querySelector(`#comentarioTexto${postId}`);
+  const botao = div.querySelector(`#btnComentar${postId}`);
 
-    function editarComentario(pubId, i) {
-      const span = document.getElementById(`comentarioTexto${pubId}_${i}`);
-      const novoTexto = prompt("Editar comentário:", span.textContent);
-      if (novoTexto !== null && novoTexto.trim() !== "") {
-        const pub = publicacoes.find(p => p.id === pubId);
-        pub.comentarios[i].texto = novoTexto.trim();
-        renderizarPublicacoes();
-      }
-    }
+  textarea.addEventListener('input', () => {
+    botao.disabled = textarea.value.trim().length === 0;
+  });
 
-    function excluirComentario(pubId, i) {
-      if (confirm("Tem certeza que deseja excluir este comentário?")) {
-        const pub = publicacoes.find(p => p.id === pubId);
-        pub.comentarios.splice(i, 1);
-        renderizarPublicacoes();
-      }
-    }
-
-    renderizarPublicacoes();
+  botao.addEventListener('click', () => {
+    const pub = mockPublicacoes.find(p => p.id === postId);
+    pub.comentarios++;
+    localStorage.setItem("mockPublicacoes", JSON.stringify(mockPublicacoes));
+    alert("Comentário adicionado!");
+    carregarPublicacoes();
+  });
+}
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-

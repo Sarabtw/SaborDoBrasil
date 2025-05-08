@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alunos\\OneDrive\\Documentos\\vittinho\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
+    "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alunos\\OneDrive\\Documentos\\vittinho\\SaborDoBrasil\\SaborDoBrasil.csproj": {
+    "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documentos\\vittinho\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
         "projectName": "SaborDoBrasil",
-        "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\vittinho\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
         "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\vittinho\\SaborDoBrasil\\obj\\",
+        "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
