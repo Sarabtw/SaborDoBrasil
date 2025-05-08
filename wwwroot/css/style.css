@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 80px;
+}
+
+.sidebar h5 {
+  font-weight: bold;
+}
+
+.sidebar .linha-laranja {
+  height: 4px;
+  background-color: #D97014;
+  width: 60%;
+  margin: 0 auto 10px;
+}
+
+.main-content {
+  border: 1px solid #C2BEBE;
+  padding: 10px;
+}
+
+.publicacao {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.publicacao img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.publicacao i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.publicacao .mt-2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.login-area {
+  text-align: center;
+}
+
+.login-area button {
+  background-color: #D97014;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.modal-login .modal-content {
+  border-radius: 10px;
+}
+
+.btn-cancelar {
+  border: 1px solid #D97014;
+  color: #D97014;
+}
+
+.btn-entrar {
+  background-color: #D97014;
+  color: #FFFFFF;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+.footer-custom {
+  background-color: #D97014;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-custom i {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.icone-svg-footer {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.logo.rounded-circle {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
