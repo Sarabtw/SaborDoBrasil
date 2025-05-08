@@ -192,50 +192,50 @@
       }
     }
 
-    function validarLogin() {
-      const emailInput = document.getElementById('emailInput');
-      const senhaInput = document.getElementById('senhaInput');
-      const erro = document.getElementById('erroLogin');
+      function abrirComentarios(id) {
+      if (!logado) return mostrarLogin();
+      const secao = document.getElementById(`comentarios${id}`);
+      secao.style.display = secao.style.display === "none" ? "block" : "none";
+    }
 
-      emailInput.classList.remove('input-error');
-      senhaInput.classList.remove('input-error');
-      erro.style.display = 'none';
+    function habilitarBotao(id) {
+      const input = document.getElementById(`comentarioInput${id}`);
+      const botao = document.getElementById(`btnComentar${id}`);
+      botao.disabled = input.value.trim() === "";
+    }
 
-      const usuarioSalvo = JSON.parse(localStorage.getItem('usuario'));
-
-      if (
-        usuarioSalvo &&
-        emailInput.value === usuarioSalvo.email &&
-        senhaInput.value === usuarioSalvo.senha
-      ) {
-        const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
-        loginModal.hide();
-
-        const successModal = new bootstrap.Modal(document.getElementById('loginSuccessModal'));
-        successModal.show();
-
-        setTimeout(() => {
-          successModal.hide();
-          mostrarPerfil(usuarioSalvo);
-        }, 2000);
-      } else {
-        if (!emailInput.value) emailInput.classList.add('input-error');
-        if (!senhaInput.value) senhaInput.classList.add('input-error');
-        erro.style.display = 'block';
+    function comentar(id) {
+      const input = document.getElementById(`comentarioInput${id}`);
+      const texto = input.value.trim();
+      if (texto !== "") {
+        const comentario = { usuario: usuarioLogado, texto };
+        const pub = publicacoes.find(p => p.id === id);
+        pub.comentarios.push(comentario);
+        renderizarPublicacoes();
       }
     }
 
-    function mostrarPerfil(usuario) {
-      const sidebar = document.getElementById('perfilArea');
-      sidebar.innerHTML = `
-        <img src="${usuario.foto}" alt="Foto de Perfil" class="logo rounded-circle" />
-        <h5 class="mt-2">${usuario.nome}</h5>
-        <div class="linha-laranja"></div>
-        <p><strong>9</strong><br />Quantidade Likes</p>
-        <p><strong>12</strong><br />Quantidade Dislikes</p>
-      `;
+    function editarComentario(pubId, i) {
+      const span = document.getElementById(`comentarioTexto${pubId}_${i}`);
+      const novoTexto = prompt("Editar comentário:", span.textContent);
+      if (novoTexto !== null && novoTexto.trim() !== "") {
+        const pub = publicacoes.find(p => p.id === pubId);
+        pub.comentarios[i].texto = novoTexto.trim();
+        renderizarPublicacoes();
+      }
     }
-  </script>
-</body>
 
+    function excluirComentario(pubId, i) {
+      if (confirm("Tem certeza que deseja excluir este comentário?")) {
+        const pub = publicacoes.find(p => p.id === pubId);
+        pub.comentarios.splice(i, 1);
+        renderizarPublicacoes();
+      }
+    }
+
+    renderizarPublicacoes();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
 </html>
+
