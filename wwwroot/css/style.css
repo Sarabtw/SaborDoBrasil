@@ -1,3 +1,4 @@
+/* sabor.css */
 body {
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
@@ -76,12 +77,10 @@ body {
 .comentario-usuario .acoes img {
   margin-left: 5px;
 }
-
 .main-content {
   border: 1px solid #C2BEBE;
   padding: 10px;
 }
-
 .login-area button {
   background-color: #D97014;
   color: #fff;
@@ -89,5 +88,4 @@ body {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  margin-top: 20px;
 }

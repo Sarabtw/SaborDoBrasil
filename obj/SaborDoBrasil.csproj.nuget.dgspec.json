@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
         "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\SaborDoBrasil\\obj\\",
+=======
+    "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "projectName": "SaborDoBrasil",
+        "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\obj\\",
+>>>>>>> develop
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
