@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "lGjNg06vz1M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
+=======
   "dgSpecHash": "NxNWGqxPfz4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Alunos\\OneDrive\\Documentos\\Larissa\\SaborDoBrasil\\SaborDoBrasil.csproj",
+>>>>>>> develop
   "expectedPackageFiles": [],
   "logs": []
 }
