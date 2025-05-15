@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace SaborDoBrasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250515182636_Usuarios")]
+    partial class Usuarios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,22 +27,24 @@ namespace SaborDoBrasil.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Cidade")
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime>("DataCriacao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Imagem")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Local")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int?>("PublicacaoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Titulo")
+                    b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("longtext");
 
