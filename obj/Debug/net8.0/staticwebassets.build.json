@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lKx2FSrs2sxRNF5mxunliOXPOCuS01XHhPI3B0t3l0g=",
+  "Hash": "3uPEooGm4OO5Y/aMH9RWcnFFSnuOhQmTY7mmyhBfmvA=",
   "Source": "SaborDoBrasil",
   "BasePath": "_content/SaborDoBrasil",
   "Mode": "Default",
@@ -378,12 +378,12 @@
       "OriginalItemSpec": "wwwroot\\img\\Whatsapp.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\Index.html",
+      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\index.html",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "Index.html",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -394,7 +394,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Index.html"
+      "OriginalItemSpec": "wwwroot\\index.html"
     }
   ]
 }
