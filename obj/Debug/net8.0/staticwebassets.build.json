@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3uPEooGm4OO5Y/aMH9RWcnFFSnuOhQmTY7mmyhBfmvA=",
+  "Hash": "YgAJRhUKjXPRHhKZtuGZ6dttgDpBS2vOHF0pYHZd044=",
   "Source": "SaborDoBrasil",
   "BasePath": "_content/SaborDoBrasil",
   "Mode": "Default",
@@ -395,6 +395,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\using Microsoft.cs",
+      "SourceId": "SaborDoBrasil",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "BasePath": "_content/SaborDoBrasil",
+      "RelativePath": "using Microsoft.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\using Microsoft.cs"
     }
   ]
 }

@@ -1,4 +1,4 @@
-public class Publicacao
+public class Usuario
 {
     public int Id { get; set; }
     public string Nome { get; set; }
@@ -8,7 +8,5 @@ public class Publicacao
     public bool Ativo { get; set; } = true;
 
     // Relacionamento com Publicacao
-    public ICollection<Publicacao> Publicacoes { get; set; }
-
 
 }
