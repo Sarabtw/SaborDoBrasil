@@ -63,14 +63,30 @@
     <div class="modal-dialog">
       <div class="modal-content modal-login">
         <div class="modal-header">
-          <h5 class="modal-title">Login</h5>
+          <h5 class="modal-title" id="modalTitle">Login</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Digite seu e-mail">
-          <input type="password" id="senhaInput" class="form-control mb-3" placeholder="Digite sua senha">
-          <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
-          <button class="btn btn-entrar w-100" onclick="logarUsuario()">Entrar</button>
+          <ul class="nav nav-tabs mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" onclick="mostrarLoginForm()">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostrarCadastroForm()">Cadastrar</a>
+            </li>
+          </ul>
+          <div id="formLogin">
+            <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Digite seu e-mail">
+            <input type="password" id="senhaInput" class="form-control mb-3" placeholder="Digite sua senha">
+            <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
+            <button class="btn btn-entrar w-100" onclick="logarUsuario()">Entrar</button>
+          </div>
+          <div id="formCadastro" style="display: none;">
+            <input type="text" id="novoUsuario" class="form-control mb-2" placeholder="Digite seu e-mail">
+            <input type="password" id="novaSenha" class="form-control mb-3" placeholder="Digite sua senha">
+            <button class="btn btn-voltar w-100 mb-2" onclick="mostrarLoginForm()">Voltar</button>
+            <button class="btn btn-cadastrar w-100" onclick="cadastrarUsuario()">Cadastrar</button>
+          </div>
         </div>
       </div>
     </div>
@@ -129,24 +145,60 @@
       modal.show();
     }
 
-    function logarUsuario() {
-      const usuario = document.getElementById("usuarioInput");
-      const senha = document.getElementById("senhaInput");
+    function mostrarLoginForm() {
+      document.getElementById('modalTitle').textContent = 'Login';
+      document.getElementById('formLogin').style.display = 'block';
+      document.getElementById('formCadastro').style.display = 'none';
+    }
 
-      if (usuario.value === "usuario_01" && senha.value === "123") {
+    function mostrarCadastroForm() {
+      document.getElementById('modalTitle').textContent = 'Cadastro';
+      document.getElementById('formLogin').style.display = 'none';
+      document.getElementById('formCadastro').style.display = 'block';
+    }
+
+    function cadastrarUsuario() {
+      const email = document.getElementById("novoUsuario").value.trim();
+      const senha = document.getElementById("novaSenha").value;
+
+      if (email === "" || senha === "") {
+        alert("Preencha todos os campos.");
+        return;
+      }
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+      if (usuarios.find(u => u.email === email)) {
+        alert("Usuário já cadastrado.");
+        return;
+      }
+
+      usuarios.push({ email, senha });
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      alert("Usuário cadastrado com sucesso!");
+      mostrarLoginForm();
+    }
+
+    function logarUsuario() {
+      const usuario = document.getElementById("usuarioInput").value.trim();
+      const senha = document.getElementById("senhaInput").value;
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+
+      const usuarioEncontrado = usuarios.find(u => u.email === usuario && u.senha === senha);
+
+      if (usuarioEncontrado) {
         logado = true;
-        usuarioLogado = usuario.value;
+        usuarioLogado = usuario;
         const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
         modal.hide();
         document.getElementById("imagemPerfil").src = "img/usuario_01.jpg";
-        document.getElementById("nomeUsuario").textContent = usuario.value;
+        document.getElementById("nomeUsuario").textContent = usuario;
         document.querySelector(".btn-login").textContent = "Sair";
         document.querySelector(".btn-login").onclick = logoutUsuario;
         renderizarPublicacoes();
       } else {
-        usuario.classList.add("input-error");
-        senha.classList.add("input-error");
-        alert("Usuário ou senha incorreto");
+        alert("Usuário ou senha incorretos.");
       }
     }
 

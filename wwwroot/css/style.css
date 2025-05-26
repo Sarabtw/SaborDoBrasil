@@ -77,10 +77,12 @@ body {
 .comentario-usuario .acoes img {
   margin-left: 5px;
 }
+
 .main-content {
   border: 1px solid #C2BEBE;
   padding: 10px;
 }
+
 .login-area button {
   background-color: #D97014;
   color: #fff;
@@ -88,4 +90,33 @@ body {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+.btn-voltar,
+.btn-cancelar {
+  background-color: #fff;
+  border: 2px solid #D97014;
+  color: #D97014;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-voltar:hover,
+.btn-cancelar:hover {
+  background-color: #D97014;
+  color: white;
+}
+
+.btn-cadastrar,
+.btn-entrar {
+  background-color: #D97014;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover,
+.btn-entrar:hover {
+  background-color: #b35e0e;
 }
