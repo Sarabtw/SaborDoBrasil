@@ -70,7 +70,28 @@
           <input type="text" id="usuarioInput" class="form-control mb-2" placeholder="Digite seu e-mail">
           <input type="password" id="senhaInput" class="form-control mb-3" placeholder="Digite sua senha">
           <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
-          <button class="btn btn-entrar w-100" onclick="logarUsuario()">Entrar</button>
+          <button class="btn btn-entrar w-100 mb-2" onclick="logarUsuario()">Entrar</button>
+          <button class="btn btn-secondary w-100" onclick="mostrarCadastro()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cadastroModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-login">
+        <div class="modal-header">
+          <h5 class="modal-title">Cadastro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="cadastroUsuario" class="form-control mb-2" placeholder="Nome de usuário">
+          <input type="text" id="cadastroFoto" class="form-control mb-2"
+            placeholder="Nome do arquivo da foto (ex: usuario_04.jpg)">
+          <input type="email" id="cadastroEmail" class="form-control mb-2" placeholder="E-mail">
+          <input type="password" id="cadastroSenha" class="form-control mb-3" placeholder="Senha">
+          <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-success w-100" onclick="cadastrarUsuario()">Cadastrar</button>
         </div>
       </div>
     </div>
@@ -129,23 +150,61 @@
       modal.show();
     }
 
-    function logarUsuario() {
-      const usuario = document.getElementById("usuarioInput");
-      const senha = document.getElementById("senhaInput");
+    function mostrarCadastro() {
+      const modalLogin = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
+      modalLogin.hide();
+      const modalCadastro = new bootstrap.Modal(document.getElementById("cadastroModal"));
+      modalCadastro.show();
+    }
 
-      if (usuario.value === "usuario_01" && senha.value === "123") {
+    function cadastrarUsuario() {
+      const usuario = document.getElementById("cadastroUsuario").value.trim();
+      const foto = document.getElementById("cadastroFoto").value.trim();
+      const email = document.getElementById("cadastroEmail").value.trim();
+      const senha = document.getElementById("cadastroSenha").value.trim();
+
+      if (!usuario || !foto || !email || !senha) {
+        alert("Preencha todos os campos!");
+        return;
+      }
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      if (usuarios.some(u => u.usuario === usuario || u.email === email)) {
+        alert("Usuário ou e-mail já cadastrado!");
+        return;
+      }
+
+      usuarios.push({ usuario, foto, email, senha });
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+      alert("Cadastro realizado com sucesso!");
+
+      const modalCadastro = bootstrap.Modal.getInstance(document.getElementById("cadastroModal"));
+      modalCadastro.hide();
+    }
+
+    function logarUsuario() {
+      const usuarioInput = document.getElementById("usuarioInput");
+      const senhaInput = document.getElementById("senhaInput");
+
+      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+      const usuarioEncontrado = usuarios.find(u =>
+        (u.usuario === usuarioInput.value.trim() || u.email === usuarioInput.value.trim()) &&
+        u.senha === senhaInput.value.trim()
+      );
+
+      if (usuarioEncontrado) {
         logado = true;
-        usuarioLogado = usuario.value;
+        usuarioLogado = usuarioEncontrado.usuario;
         const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
         modal.hide();
-        document.getElementById("imagemPerfil").src = "img/usuario_01.jpg";
-        document.getElementById("nomeUsuario").textContent = usuario.value;
+        document.getElementById("imagemPerfil").src = "img/" + usuarioEncontrado.foto;
+        document.getElementById("nomeUsuario").textContent = usuarioEncontrado.usuario;
         document.querySelector(".btn-login").textContent = "Sair";
         document.querySelector(".btn-login").onclick = logoutUsuario;
         renderizarPublicacoes();
       } else {
-        usuario.classList.add("input-error");
-        senha.classList.add("input-error");
+        usuarioInput.classList.add("input-error");
+        senhaInput.classList.add("input-error");
         alert("Usuário ou senha incorreto");
       }
     }
