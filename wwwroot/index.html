@@ -31,7 +31,9 @@
 
 
       <div class="col-md-3 p-3 text-center login-area">
-        <button class="btn btn-login" onclick="mostrarLogin()">Entrar</button>
+        <button class="btn btn-login mb-2" onclick="mostrarLogin()">Entrar</button>
+        <button class="btn btn-success w-100" id="btnNovaPub" style="display:none"
+          onclick="mostrarNovaPublicacao()">Nova Publicação</button>
       </div>
     </div>
   </div>
@@ -92,6 +94,27 @@
           <input type="password" id="cadastroSenha" class="form-control mb-3" placeholder="Senha">
           <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
           <button class="btn btn-success w-100" onclick="cadastrarUsuario()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Nova Publicação -->
+  <div class="modal fade" id="novaPublicacaoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-login">
+        <div class="modal-header">
+          <h5 class="modal-title">Nova Publicação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="novaFoto" class="form-control mb-2"
+            placeholder="Nome do arquivo da foto (ex: publicacao04.png)">
+          <input type="text" id="novoLugar" class="form-control mb-2" placeholder="Lugar">
+          <input type="text" id="novaCidade" class="form-control mb-2" placeholder="Cidade">
+          <textarea id="novaDescricao" class="form-control mb-3" placeholder="Descrição do prato"></textarea>
+          <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
+          <button class="btn btn-success w-100" onclick="cadastrarPublicacao()">Publicar</button>
         </div>
       </div>
     </div>
@@ -202,6 +225,7 @@
         document.querySelector(".btn-login").textContent = "Sair";
         document.querySelector(".btn-login").onclick = logoutUsuario;
         renderizarPublicacoes();
+        atualizarBotaoNovaPub();
       } else {
         usuarioInput.classList.add("input-error");
         senhaInput.classList.add("input-error");
@@ -217,6 +241,45 @@
       document.querySelector(".btn-login").textContent = "Entrar";
       document.querySelector(".btn-login").onclick = mostrarLogin;
       renderizarPublicacoes();
+      atualizarBotaoNovaPub();
+    }
+
+    function mostrarNovaPublicacao() {
+      const modal = new bootstrap.Modal(document.getElementById("novaPublicacaoModal"));
+      modal.show();
+    }
+
+    function cadastrarPublicacao() {
+      const foto = document.getElementById("novaFoto").value.trim();
+      const local = document.getElementById("novoLugar").value.trim();
+      const cidade = document.getElementById("novaCidade").value.trim();
+      const descricao = document.getElementById("novaDescricao").value.trim();
+
+      if (!foto || !local || !cidade || !descricao) {
+        alert("Preencha todos os campos!");
+        return;
+      }
+
+      publicacoes.push({
+        id: publicacoes.length + 1,
+        titulo: descricao,
+        imagem: "img/" + foto,
+        local: local,
+        cidade: cidade,
+        likes: 0,
+        dislikes: 0,
+        comentarios: []
+      });
+
+      const modal = bootstrap.Modal.getInstance(document.getElementById("novaPublicacaoModal"));
+      modal.hide();
+      renderizarPublicacoes();
+      atualizarContadoresTotais();
+    }
+
+    // Exiba o botão "Nova Publicação" apenas se estiver logado
+    function atualizarBotaoNovaPub() {
+      document.getElementById("btnNovaPub").style.display = logado ? "block" : "none";
     }
 
     function renderizarPublicacoes() {
@@ -373,6 +436,7 @@
       document.getElementById("totalDislikes").textContent = totalDislikes;
     }
 
+    atualizarBotaoNovaPub();
     renderizarPublicacoes();
   </script>
 </body>
