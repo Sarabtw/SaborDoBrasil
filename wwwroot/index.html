@@ -21,6 +21,9 @@
           <div><strong id="totalLikes">0</strong><br><small>Likes</small></div>
           <div><strong id="totalDislikes">0</strong><br><small>Deslikes</small></div>
         </div>
+        <!-- Botão Nova Publicação logo abaixo do perfil -->
+        <button class="btn btn-success w-100 mt-4" id="btnNovaPub" style="display:none"
+          onclick="mostrarNovaPublicacao()">Nova Publicação</button>
       </div>
 
 
@@ -32,8 +35,6 @@
 
       <div class="col-md-3 p-3 text-center login-area">
         <button class="btn btn-login mb-2" onclick="mostrarLogin()">Entrar</button>
-        <button class="btn btn-success w-100" id="btnNovaPub" style="display:none"
-          onclick="mostrarNovaPublicacao()">Nova Publicação</button>
       </div>
     </div>
   </div>
@@ -88,8 +89,7 @@
         </div>
         <div class="modal-body">
           <input type="text" id="cadastroUsuario" class="form-control mb-2" placeholder="Nome de usuário">
-          <input type="text" id="cadastroFoto" class="form-control mb-2"
-            placeholder="Nome do arquivo da foto (Escrever de usuario_01.jpg a 03)">
+          <input type="file" id="cadastroFoto" class="form-control mb-2" accept="image/*">
           <input type="email" id="cadastroEmail" class="form-control mb-2" placeholder="E-mail">
           <input type="password" id="cadastroSenha" class="form-control mb-3" placeholder="Senha">
           <button class="btn btn-cancelar w-100 mb-2" data-bs-dismiss="modal">Cancelar</button>
@@ -108,8 +108,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <input type="text" id="novaFoto" class="form-control mb-2"
-            placeholder="Nome do arquivo da foto (ex: publicacao04.png)">
+          <input type="file" id="novaFoto" class="form-control mb-2" accept="image/*">
           <input type="text" id="novoLugar" class="form-control mb-2" placeholder="Lugar">
           <input type="text" id="novaCidade" class="form-control mb-2" placeholder="Cidade">
           <textarea id="novaDescricao" class="form-control mb-3" placeholder="Descrição do prato"></textarea>
@@ -182,27 +181,31 @@
 
     function cadastrarUsuario() {
       const usuario = document.getElementById("cadastroUsuario").value.trim();
-      const foto = document.getElementById("cadastroFoto").value.trim();
+      const fotoInput = document.getElementById("cadastroFoto");
       const email = document.getElementById("cadastroEmail").value.trim();
       const senha = document.getElementById("cadastroSenha").value.trim();
 
-      if (!usuario || !foto || !email || !senha) {
+      if (!usuario || !fotoInput.files[0] || !email || !senha) {
         alert("Preencha todos os campos!");
         return;
       }
 
-      let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-      if (usuarios.some(u => u.usuario === usuario || u.email === email)) {
-        alert("Usuário ou e-mail já cadastrado!");
-        return;
-      }
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+        if (usuarios.some(u => u.usuario === usuario || u.email === email)) {
+          alert("Usuário ou e-mail já cadastrado!");
+          return;
+        }
 
-      usuarios.push({ usuario, foto, email, senha });
-      localStorage.setItem("usuarios", JSON.stringify(usuarios));
-      alert("Cadastro realizado com sucesso!");
+        usuarios.push({ usuario, foto: e.target.result, email, senha });
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        alert("Cadastro realizado com sucesso!");
 
-      const modalCadastro = bootstrap.Modal.getInstance(document.getElementById("cadastroModal"));
-      modalCadastro.hide();
+        const modalCadastro = bootstrap.Modal.getInstance(document.getElementById("cadastroModal"));
+        modalCadastro.hide();
+      };
+      reader.readAsDataURL(fotoInput.files[0]);
     }
 
     function logarUsuario() {
@@ -220,7 +223,7 @@
         usuarioLogado = usuarioEncontrado.usuario;
         const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
         modal.hide();
-        document.getElementById("imagemPerfil").src = "img/" + usuarioEncontrado.foto;
+        document.getElementById("imagemPerfil").src = usuarioEncontrado.foto;
         document.getElementById("nomeUsuario").textContent = usuarioEncontrado.usuario;
         document.querySelector(".btn-login").textContent = "Sair";
         document.querySelector(".btn-login").onclick = logoutUsuario;
@@ -250,31 +253,35 @@
     }
 
     function cadastrarPublicacao() {
-      const foto = document.getElementById("novaFoto").value.trim();
+      const fileInput = document.getElementById("novaFoto");
       const local = document.getElementById("novoLugar").value.trim();
       const cidade = document.getElementById("novaCidade").value.trim();
       const descricao = document.getElementById("novaDescricao").value.trim();
 
-      if (!foto || !local || !cidade || !descricao) {
+      if (!fileInput.files[0] || !local || !cidade || !descricao) {
         alert("Preencha todos os campos!");
         return;
       }
 
-      publicacoes.push({
-        id: publicacoes.length + 1,
-        titulo: descricao,
-        imagem: "img/" + foto,
-        local: local,
-        cidade: cidade,
-        likes: 0,
-        dislikes: 0,
-        comentarios: []
-      });
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        publicacoes.push({
+          id: publicacoes.length + 1,
+          titulo: descricao,
+          imagem: e.target.result, // DataURL da imagem
+          local: local,
+          cidade: cidade,
+          likes: 0,
+          dislikes: 0,
+          comentarios: []
+        });
 
-      const modal = bootstrap.Modal.getInstance(document.getElementById("novaPublicacaoModal"));
-      modal.hide();
-      renderizarPublicacoes();
-      atualizarContadoresTotais();
+        const modal = bootstrap.Modal.getInstance(document.getElementById("novaPublicacaoModal"));
+        modal.hide();
+        renderizarPublicacoes();
+        atualizarContadoresTotais();
+      };
+      reader.readAsDataURL(fileInput.files[0]);
     }
 
     // Exiba o botão "Nova Publicação" apenas se estiver logado
