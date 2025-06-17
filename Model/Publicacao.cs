@@ -6,5 +6,11 @@ public class Publicacao
     public string Local { get; set; }
     public string Cidade { get; set; }
 
-    public ICollection<Publicacao> Publicacoes { get; set; }
+    // FK para o autor da publicação
+    public int UsuarioId { get; set; }
+    public virtual Usuario Usuario { get; set; }
+
+    // Relacionamentos
+    public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
+    public virtual ICollection<Like> Likes { get; set; } = new List<Like>();
 }
