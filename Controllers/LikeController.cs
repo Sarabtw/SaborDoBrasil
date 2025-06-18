@@ -14,7 +14,7 @@ public class LikeController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> PostLike([FromBody] Like like)
     {
-        // Opcional: lógica para evitar múltiplos likes do mesmo usuário na mesma publicação
+        
         _context.Likes.Add(like);
         await _context.SaveChangesAsync();
         return CreatedAtAction(nameof(PostLike), new { id = like.Id }, like);

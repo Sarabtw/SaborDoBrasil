@@ -1,88 +1,92 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\SaborDoBrasil.mwb",
+      "PackagePath": "staticwebassets\\SaborDoBrasil.mwb"
+    },
+    {
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
       "PackagePath": "staticwebassets\\img\\Globe.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
       "PackagePath": "staticwebassets\\img\\Instagram.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
       "PackagePath": "staticwebassets\\img\\Twitter.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
       "PackagePath": "staticwebassets\\img\\Whatsapp.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
       "PackagePath": "staticwebassets\\img\\chat.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
       "PackagePath": "staticwebassets\\img\\flecha_baixo_cheia.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
       "PackagePath": "staticwebassets\\img\\flecha_baixo_vazia.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
       "PackagePath": "staticwebassets\\img\\flecha_cima_cheia.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
       "PackagePath": "staticwebassets\\img\\flecha_cima_vazia.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
       "PackagePath": "staticwebassets\\img\\lapis_editar.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
       "PackagePath": "staticwebassets\\img\\lixeira_deletar.svg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
       "PackagePath": "staticwebassets\\img\\logo_sabor_do_brasil.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
       "PackagePath": "staticwebassets\\img\\publicacao01.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
       "PackagePath": "staticwebassets\\img\\publicacao02.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
       "PackagePath": "staticwebassets\\img\\publicacao03.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
       "PackagePath": "staticwebassets\\img\\usuario_01.jpg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
       "PackagePath": "staticwebassets\\img\\usuario_02.jpg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
       "PackagePath": "staticwebassets\\img\\usuario_03.jpg"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\using Microsoft.cs",
-      "PackagePath": "staticwebassets\\using Microsoft.cs"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SaborDoBrasil.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SaborDoBrasil.Microsoft.AspNetCore.StaticWebAssets.props",

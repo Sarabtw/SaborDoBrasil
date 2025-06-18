@@ -21,7 +21,7 @@
           <div><strong id="totalLikes">0</strong><br><small>Likes</small></div>
           <div><strong id="totalDislikes">0</strong><br><small>Deslikes</small></div>
         </div>
-        <!-- Botão Nova Publicação logo abaixo do perfil -->
+   
         <button class="btn btn-success w-100 mt-4" id="btnNovaPub" style="display:none"
           onclick="mostrarNovaPublicacao()">Nova Publicação</button>
       </div>
@@ -99,7 +99,7 @@
     </div>
   </div>
 
-  <!-- Modal de Nova Publicação -->
+  
   <div class="modal fade" id="novaPublicacaoModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content modal-login">
@@ -123,33 +123,46 @@
   <script>
     let logado = false;
     let usuarioLogado = "";
+    let usuarioLogadoId = null;
     let interacao = {};
+    let likesUsuario = [];
+    let dislikesUsuario = [];
 
     const publicacoes = [
       {
         id: 1,
-        titulo: "Peixe Frito",
+        titulo: "Título do prato 01",
         imagem: "img/publicacao01.png",
-        local: "Peixaria do Queiroz",
-        cidade: "São Gonçalo-RJ",
+        local: "Local 01",
+        cidade: "Maceió-AL",
         likes: 2,
         dislikes: 1,
         comentarios: [
           { usuario: "usuario_01", texto: "Muito saboroso!" },
-          { usuario: "usuario_03", texto: "Excelente tempero!" }
+          { usuario: "usuario_03", texto: "Excelente tempero!" },
+          { usuario: "Carlos", texto: "Quero conhecer um dia!" },
+          { usuario: "Fernanda", texto: "Já fui e recomendo muito!" }
         ]
       },
       {
         id: 2,
-        titulo: "Steak a Diana",
+        titulo: "Título do prato 02",
         imagem: "img/publicacao02.png",
-        local: "Bocadinho",
-        cidade: "Vila Olímpia-SP",
-        likes: 1,
-        dislikes: 0,
+        local: "Local 02",
+        cidade: "Maceió-AL",
+        likes: 9,
+        dislikes: 1,
         comentarios: [
-          { usuario: "usuario_02", texto: "Delícia!" },
-          { usuario: "usuario_03", texto: "Muito bom mesmo!" }
+          { usuario: "usuario_01", texto: "Muito saboroso!" },
+          { usuario: "usuario_03", texto: "Excelente tempero!" },
+          { usuario: "Rafaela", texto: "Quero visitar em breve!" },
+          { usuario: "Bruno", texto: "Fotos incríveis!" },
+          { usuario: "Sofia", texto: "A cultura é maravilhosa." },
+          { usuario: "Gabriel", texto: "Já fui e amei!" },
+          { usuario: "Larissa", texto: "Ótima dica de passeio." },
+          { usuario: "Felipe", texto: "Muito animado!" },
+          { usuario: "Camila", texto: "Quanta história!" },
+          { usuario: "André", texto: "Vale muito a pena conhecer." }
         ]
       },
       {
@@ -221,6 +234,7 @@
       if (usuarioEncontrado) {
         logado = true;
         usuarioLogado = usuarioEncontrado.usuario;
+        usuarioLogadoId = usuarioEncontrado.id;
         const modal = bootstrap.Modal.getInstance(document.getElementById("loginModal"));
         modal.hide();
         document.getElementById("imagemPerfil").src = usuarioEncontrado.foto;
@@ -229,6 +243,7 @@
         document.querySelector(".btn-login").onclick = logoutUsuario;
         renderizarPublicacoes();
         atualizarBotaoNovaPub();
+        aoLogar(usuarioEncontrado.id);
       } else {
         usuarioInput.classList.add("input-error");
         senhaInput.classList.add("input-error");
@@ -239,6 +254,7 @@
     function logoutUsuario() {
       logado = false;
       usuarioLogado = "";
+      usuarioLogadoId = null;
       document.getElementById("imagemPerfil").src = "img/logo_sabor_do_brasil.png";
       document.getElementById("nomeUsuario").textContent = "Sabor do Brasil";
       document.querySelector(".btn-login").textContent = "Entrar";
@@ -268,7 +284,7 @@
         publicacoes.push({
           id: publicacoes.length + 1,
           titulo: descricao,
-          imagem: e.target.result, // DataURL da imagem
+          imagem: e.target.result, 
           local: local,
           cidade: cidade,
           likes: 0,
@@ -284,7 +300,7 @@
       reader.readAsDataURL(fileInput.files[0]);
     }
 
-    // Exiba o botão "Nova Publicação" apenas se estiver logado
+  
     function atualizarBotaoNovaPub() {
       document.getElementById("btnNovaPub").style.display = logado ? "block" : "none";
     }
@@ -326,7 +342,9 @@
               ${comentariosHtml}
               ${logado ? `
               <textarea class="form-control mb-2" id="comentarioInput${pub.id}" oninput="habilitarBotao(${pub.id})" placeholder="Digite seu comentário"></textarea>
-              <button class="btn btn-sm btn-comentar" id="btnComentar${pub.id}" onclick="comentar(${pub.id})" disabled>Comentar</button>
+              <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-comentar" id="btnComentar${pub.id}" onclick="comentar(${pub.id})" disabled>Comentar</button>
+              </div>
               ` : ""}
             </div>
           </div>`;
@@ -443,8 +461,17 @@
       document.getElementById("totalDislikes").textContent = totalDislikes;
     }
 
+    // Quando o usuário fizer login, zere os contadores de likes e dislikes do usuário
+    function aoLogar(usuarioId) {
+      usuarioLogadoId = usuarioId;
+      likesUsuario = [];
+      dislikesUsuario = [];
+      atualizarContadoresUsuario();
+    }
+
     atualizarBotaoNovaPub();
     renderizarPublicacoes();
+    atualizarContadoresTotais();
   </script>
 </body>
 

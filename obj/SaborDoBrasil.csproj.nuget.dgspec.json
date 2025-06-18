@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
+    "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\SaborDoBrasil.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\SaborDoBrasil.csproj": {
+    "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\SaborDoBrasil.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "projectUniqueName": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\SaborDoBrasil.csproj",
         "projectName": "SaborDoBrasil",
-        "projectPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\SaborDoBrasil.csproj",
+        "projectPath": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\SaborDoBrasil.csproj",
         "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\obj\\",
+        "outputPath": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,7 +37,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -81,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

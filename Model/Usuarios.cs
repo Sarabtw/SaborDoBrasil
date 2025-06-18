@@ -8,7 +8,7 @@ public class Usuario
     public DateTime DataCriacao { get; set; } = DateTime.Now;
     public bool Ativo { get; set; } = true;
 
-    // Relacionamentos
+
     public virtual ICollection<Publicacao> Publicacoes { get; set; } = new List<Publicacao>();
     public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
     public virtual ICollection<Like> Likes { get; set; } = new List<Like>();

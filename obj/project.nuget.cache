@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "68ZYFHtoVKA=",
+  "dgSpecHash": "ZvMqLgiyrME=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\SaborDoBrasil.csproj",
+  "projectFilePath": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\SaborDoBrasil.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alunos\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\google.protobuf\\3.30.0\\google.protobuf.3.30.0.nupkg.sha512",

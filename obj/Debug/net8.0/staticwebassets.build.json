@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YgAJRhUKjXPRHhKZtuGZ6dttgDpBS2vOHF0pYHZd044=",
+  "Hash": "+Q4q7frQ5qdNBWc1+N+0LVOe0GP4fJ/HM3863B1WJRc=",
   "Source": "SaborDoBrasil",
   "BasePath": "_content/SaborDoBrasil",
   "Mode": "Default",
@@ -10,410 +10,2176 @@
     {
       "Name": "SaborDoBrasil\\wwwroot",
       "Source": "SaborDoBrasil",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\css\\style.css",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "css/style.css",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "vkrrl28wdk",
+      "Integrity": "X8Egnp5uJsgK2NeeCdmfWn22Y8QN/brRdr7K6D61U54=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/chat.svg",
+      "RelativePath": "img/chat#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7s0c91qy98",
+      "Integrity": "9/vOl8T0WQ8Mb4amPvcrTkwWd9cga7Nl+hZcIDwjMRU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\chat.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/flecha_baixo_cheia.svg",
+      "RelativePath": "img/flecha_baixo_cheia#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8qkjmlj21l",
+      "Integrity": "UBa/jynRh1T8dzuZjcMQHYoKwA0vz4FqiUDwVDPw9IY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\flecha_baixo_cheia.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/flecha_baixo_vazia.svg",
+      "RelativePath": "img/flecha_baixo_vazia#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8dpy2ltvth",
+      "Integrity": "7PoazbzZLzlyn4sWyCvReK0h21fKrYyrZKhpMFpZWKM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\flecha_baixo_vazia.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/flecha_cima_cheia.svg",
+      "RelativePath": "img/flecha_cima_cheia#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "jc0jl8ngsi",
+      "Integrity": "g03/4nb6tyME/3Io9HAjLFtZMim4oDZIWgc18fZ3Htg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\flecha_cima_cheia.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/flecha_cima_vazia.svg",
+      "RelativePath": "img/flecha_cima_vazia#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "59w9snnuya",
+      "Integrity": "iVPJ+ktxZ7o/NgXedkTdjvHRh2PyK9MGQ9uOpGMbfVk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\flecha_cima_vazia.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/Globe.svg",
+      "RelativePath": "img/Globe#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "1897ujd3ci",
+      "Integrity": "jzsNRQ/FHoDqSAT/bLqnRujZ5V5T0mMoney/O5ycn3c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Globe.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/Instagram.svg",
+      "RelativePath": "img/Instagram#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "a385mu8pfa",
+      "Integrity": "NoYqOD0z9AB/Vd9+R+4ZcA44tKFAjBqu6bj97mdU0GY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Instagram.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/lapis_editar.svg",
+      "RelativePath": "img/lapis_editar#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "n7ls05rmsm",
+      "Integrity": "Y76NkxA4ItEcv5ZS/Egea8U3B9VU+hDSAcKMuYbB/cU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\lapis_editar.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/lixeira_deletar.svg",
+      "RelativePath": "img/lixeira_deletar#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "cvjklsgkbh",
+      "Integrity": "mMbfEBTAcUwzeSVVnT3/EYUrYcy7ZgTkGgIKvy/+Ia0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\lixeira_deletar.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/logo_sabor_do_brasil.png",
+      "RelativePath": "img/logo_sabor_do_brasil#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u6dev0cuo3",
+      "Integrity": "ugbHoBvw1aXOHSKvMvZ3EB6q7UTg6kSQSvgn5f9aeOI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\logo_sabor_do_brasil.png"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/publicacao01.png",
+      "RelativePath": "img/publicacao01#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4bbwu9ccmq",
+      "Integrity": "wJy6Zec+9SW2X8+bqGkyJ8AgqWIpQ3zHyLuBMa9tq9o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\publicacao01.png"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/publicacao02.png",
+      "RelativePath": "img/publicacao02#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "k893m4d8cu",
+      "Integrity": "fHg1FrN+FJT1KMTBWlS0A3L37e8YRl/m7u/8l8wCGIo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\publicacao02.png"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/publicacao03.png",
+      "RelativePath": "img/publicacao03#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "8nna4hpb8a",
+      "Integrity": "zLGXP1N5CFG/05gmH0Eu+FfqXhcfIrCW71AAx5U/130=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\publicacao03.png"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/Twitter.svg",
+      "RelativePath": "img/Twitter#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "i51uuksczw",
+      "Integrity": "qjAh3JK3783vXCSW83cYTiXRZzoe5ij7cKTjPodh22U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Twitter.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/usuario_01.jpg",
+      "RelativePath": "img/usuario_01#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "lt9jhcs153",
+      "Integrity": "eRn20FSffmdlbK6MqdTpUGKVNI8u1L+RF24J1Z/Sv6c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\usuario_01.jpg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/usuario_02.jpg",
+      "RelativePath": "img/usuario_02#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "3trw6bowx4",
+      "Integrity": "x6bYkah0JkUL9HH0A88XWFy+LBZuaaJsrQGnPjvxS4U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\usuario_02.jpg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/usuario_03.jpg",
+      "RelativePath": "img/usuario_03#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zp4hwbb3ki",
+      "Integrity": "J85h2SWiS3oiErkShXYMOTNzxpivjpAMAhV17pCS53o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\usuario_03.jpg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "img/Whatsapp.svg",
+      "RelativePath": "img/Whatsapp#[.{fingerprint}]?.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "a0djx5hflf",
+      "Integrity": "mo03JxywPGha3rJ6XtKipELyx3w/c4ao16deWxkX5to=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Whatsapp.svg"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\index.html",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "index.html",
+      "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "4dxgrpvyfl",
+      "Integrity": "GIRLB91fRpSAxm59TFaIsyKjj/mvqdsKTKqRUue048Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\using Microsoft.cs",
+      "Identity": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\SaborDoBrasil.mwb",
       "SourceId": "SaborDoBrasil",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Alunos\\OneDrive\\Documents\\Sara\\SaborDoBrasil\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\",
       "BasePath": "_content/SaborDoBrasil",
-      "RelativePath": "using Microsoft.cs",
+      "RelativePath": "SaborDoBrasil#[.{fingerprint}]?.mwb",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bx2sjyi9at",
+      "Integrity": "Meedi8YeqH6PR8yGfWjUvS3w2cnyJkI+EUVuOAQUsyw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\using Microsoft.cs"
+      "OriginalItemSpec": "wwwroot\\SaborDoBrasil.mwb"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X8Egnp5uJsgK2NeeCdmfWn22Y8QN/brRdr7K6D61U54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 17:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X8Egnp5uJsgK2NeeCdmfWn22Y8QN/brRdr7K6D61U54="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.vkrrl28wdk.css",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X8Egnp5uJsgK2NeeCdmfWn22Y8QN/brRdr7K6D61U54=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 17:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vkrrl28wdk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X8Egnp5uJsgK2NeeCdmfWn22Y8QN/brRdr7K6D61U54="
+        }
+      ]
+    },
+    {
+      "Route": "img/chat.7s0c91qy98.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/vOl8T0WQ8Mb4amPvcrTkwWd9cga7Nl+hZcIDwjMRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7s0c91qy98"
+        },
+        {
+          "Name": "label",
+          "Value": "img/chat.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/vOl8T0WQ8Mb4amPvcrTkwWd9cga7Nl+hZcIDwjMRU="
+        }
+      ]
+    },
+    {
+      "Route": "img/chat.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\chat.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1493"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9/vOl8T0WQ8Mb4amPvcrTkwWd9cga7Nl+hZcIDwjMRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9/vOl8T0WQ8Mb4amPvcrTkwWd9cga7Nl+hZcIDwjMRU="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_baixo_cheia.8qkjmlj21l.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UBa/jynRh1T8dzuZjcMQHYoKwA0vz4FqiUDwVDPw9IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8qkjmlj21l"
+        },
+        {
+          "Name": "label",
+          "Value": "img/flecha_baixo_cheia.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UBa/jynRh1T8dzuZjcMQHYoKwA0vz4FqiUDwVDPw9IY="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_baixo_cheia.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_cheia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UBa/jynRh1T8dzuZjcMQHYoKwA0vz4FqiUDwVDPw9IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UBa/jynRh1T8dzuZjcMQHYoKwA0vz4FqiUDwVDPw9IY="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_baixo_vazia.8dpy2ltvth.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7PoazbzZLzlyn4sWyCvReK0h21fKrYyrZKhpMFpZWKM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8dpy2ltvth"
+        },
+        {
+          "Name": "label",
+          "Value": "img/flecha_baixo_vazia.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7PoazbzZLzlyn4sWyCvReK0h21fKrYyrZKhpMFpZWKM="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_baixo_vazia.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_baixo_vazia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7PoazbzZLzlyn4sWyCvReK0h21fKrYyrZKhpMFpZWKM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7PoazbzZLzlyn4sWyCvReK0h21fKrYyrZKhpMFpZWKM="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_cima_cheia.jc0jl8ngsi.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g03/4nb6tyME/3Io9HAjLFtZMim4oDZIWgc18fZ3Htg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jc0jl8ngsi"
+        },
+        {
+          "Name": "label",
+          "Value": "img/flecha_cima_cheia.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g03/4nb6tyME/3Io9HAjLFtZMim4oDZIWgc18fZ3Htg="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_cima_cheia.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_cheia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g03/4nb6tyME/3Io9HAjLFtZMim4oDZIWgc18fZ3Htg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g03/4nb6tyME/3Io9HAjLFtZMim4oDZIWgc18fZ3Htg="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_cima_vazia.59w9snnuya.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVPJ+ktxZ7o/NgXedkTdjvHRh2PyK9MGQ9uOpGMbfVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "59w9snnuya"
+        },
+        {
+          "Name": "label",
+          "Value": "img/flecha_cima_vazia.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iVPJ+ktxZ7o/NgXedkTdjvHRh2PyK9MGQ9uOpGMbfVk="
+        }
+      ]
+    },
+    {
+      "Route": "img/flecha_cima_vazia.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\flecha_cima_vazia.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "775"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iVPJ+ktxZ7o/NgXedkTdjvHRh2PyK9MGQ9uOpGMbfVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iVPJ+ktxZ7o/NgXedkTdjvHRh2PyK9MGQ9uOpGMbfVk="
+        }
+      ]
+    },
+    {
+      "Route": "img/Globe.1897ujd3ci.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jzsNRQ/FHoDqSAT/bLqnRujZ5V5T0mMoney/O5ycn3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1897ujd3ci"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Globe.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jzsNRQ/FHoDqSAT/bLqnRujZ5V5T0mMoney/O5ycn3c="
+        }
+      ]
+    },
+    {
+      "Route": "img/Globe.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Globe.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jzsNRQ/FHoDqSAT/bLqnRujZ5V5T0mMoney/O5ycn3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jzsNRQ/FHoDqSAT/bLqnRujZ5V5T0mMoney/O5ycn3c="
+        }
+      ]
+    },
+    {
+      "Route": "img/Instagram.a385mu8pfa.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoYqOD0z9AB/Vd9+R+4ZcA44tKFAjBqu6bj97mdU0GY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a385mu8pfa"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Instagram.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NoYqOD0z9AB/Vd9+R+4ZcA44tKFAjBqu6bj97mdU0GY="
+        }
+      ]
+    },
+    {
+      "Route": "img/Instagram.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Instagram.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3788"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoYqOD0z9AB/Vd9+R+4ZcA44tKFAjBqu6bj97mdU0GY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NoYqOD0z9AB/Vd9+R+4ZcA44tKFAjBqu6bj97mdU0GY="
+        }
+      ]
+    },
+    {
+      "Route": "img/lapis_editar.n7ls05rmsm.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y76NkxA4ItEcv5ZS/Egea8U3B9VU+hDSAcKMuYbB/cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n7ls05rmsm"
+        },
+        {
+          "Name": "label",
+          "Value": "img/lapis_editar.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y76NkxA4ItEcv5ZS/Egea8U3B9VU+hDSAcKMuYbB/cU="
+        }
+      ]
+    },
+    {
+      "Route": "img/lapis_editar.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lapis_editar.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y76NkxA4ItEcv5ZS/Egea8U3B9VU+hDSAcKMuYbB/cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y76NkxA4ItEcv5ZS/Egea8U3B9VU+hDSAcKMuYbB/cU="
+        }
+      ]
+    },
+    {
+      "Route": "img/lixeira_deletar.cvjklsgkbh.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2510"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mMbfEBTAcUwzeSVVnT3/EYUrYcy7ZgTkGgIKvy/+Ia0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cvjklsgkbh"
+        },
+        {
+          "Name": "label",
+          "Value": "img/lixeira_deletar.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mMbfEBTAcUwzeSVVnT3/EYUrYcy7ZgTkGgIKvy/+Ia0="
+        }
+      ]
+    },
+    {
+      "Route": "img/lixeira_deletar.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\lixeira_deletar.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2510"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mMbfEBTAcUwzeSVVnT3/EYUrYcy7ZgTkGgIKvy/+Ia0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mMbfEBTAcUwzeSVVnT3/EYUrYcy7ZgTkGgIKvy/+Ia0="
+        }
+      ]
+    },
+    {
+      "Route": "img/logo_sabor_do_brasil.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ugbHoBvw1aXOHSKvMvZ3EB6q7UTg6kSQSvgn5f9aeOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ugbHoBvw1aXOHSKvMvZ3EB6q7UTg6kSQSvgn5f9aeOI="
+        }
+      ]
+    },
+    {
+      "Route": "img/logo_sabor_do_brasil.u6dev0cuo3.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\logo_sabor_do_brasil.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ugbHoBvw1aXOHSKvMvZ3EB6q7UTg6kSQSvgn5f9aeOI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u6dev0cuo3"
+        },
+        {
+          "Name": "label",
+          "Value": "img/logo_sabor_do_brasil.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ugbHoBvw1aXOHSKvMvZ3EB6q7UTg6kSQSvgn5f9aeOI="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao01.4bbwu9ccmq.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "409002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wJy6Zec+9SW2X8+bqGkyJ8AgqWIpQ3zHyLuBMa9tq9o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4bbwu9ccmq"
+        },
+        {
+          "Name": "label",
+          "Value": "img/publicacao01.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wJy6Zec+9SW2X8+bqGkyJ8AgqWIpQ3zHyLuBMa9tq9o="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao01.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao01.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "409002"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wJy6Zec+9SW2X8+bqGkyJ8AgqWIpQ3zHyLuBMa9tq9o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wJy6Zec+9SW2X8+bqGkyJ8AgqWIpQ3zHyLuBMa9tq9o="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao02.k893m4d8cu.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHg1FrN+FJT1KMTBWlS0A3L37e8YRl/m7u/8l8wCGIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k893m4d8cu"
+        },
+        {
+          "Name": "label",
+          "Value": "img/publicacao02.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHg1FrN+FJT1KMTBWlS0A3L37e8YRl/m7u/8l8wCGIo="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao02.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao02.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "338546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fHg1FrN+FJT1KMTBWlS0A3L37e8YRl/m7u/8l8wCGIo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fHg1FrN+FJT1KMTBWlS0A3L37e8YRl/m7u/8l8wCGIo="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao03.8nna4hpb8a.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "410896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zLGXP1N5CFG/05gmH0Eu+FfqXhcfIrCW71AAx5U/130=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8nna4hpb8a"
+        },
+        {
+          "Name": "label",
+          "Value": "img/publicacao03.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zLGXP1N5CFG/05gmH0Eu+FfqXhcfIrCW71AAx5U/130="
+        }
+      ]
+    },
+    {
+      "Route": "img/publicacao03.png",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\publicacao03.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "410896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zLGXP1N5CFG/05gmH0Eu+FfqXhcfIrCW71AAx5U/130=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zLGXP1N5CFG/05gmH0Eu+FfqXhcfIrCW71AAx5U/130="
+        }
+      ]
+    },
+    {
+      "Route": "img/Twitter.i51uuksczw.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qjAh3JK3783vXCSW83cYTiXRZzoe5ij7cKTjPodh22U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i51uuksczw"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Twitter.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qjAh3JK3783vXCSW83cYTiXRZzoe5ij7cKTjPodh22U="
+        }
+      ]
+    },
+    {
+      "Route": "img/Twitter.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Twitter.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qjAh3JK3783vXCSW83cYTiXRZzoe5ij7cKTjPodh22U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qjAh3JK3783vXCSW83cYTiXRZzoe5ij7cKTjPodh22U="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_01.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eRn20FSffmdlbK6MqdTpUGKVNI8u1L+RF24J1Z/Sv6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eRn20FSffmdlbK6MqdTpUGKVNI8u1L+RF24J1Z/Sv6c="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_01.lt9jhcs153.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58801"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eRn20FSffmdlbK6MqdTpUGKVNI8u1L+RF24J1Z/Sv6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lt9jhcs153"
+        },
+        {
+          "Name": "label",
+          "Value": "img/usuario_01.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eRn20FSffmdlbK6MqdTpUGKVNI8u1L+RF24J1Z/Sv6c="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_02.3trw6bowx4.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6bYkah0JkUL9HH0A88XWFy+LBZuaaJsrQGnPjvxS4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3trw6bowx4"
+        },
+        {
+          "Name": "label",
+          "Value": "img/usuario_02.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6bYkah0JkUL9HH0A88XWFy+LBZuaaJsrQGnPjvxS4U="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_02.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x6bYkah0JkUL9HH0A88XWFy+LBZuaaJsrQGnPjvxS4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x6bYkah0JkUL9HH0A88XWFy+LBZuaaJsrQGnPjvxS4U="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_03.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J85h2SWiS3oiErkShXYMOTNzxpivjpAMAhV17pCS53o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J85h2SWiS3oiErkShXYMOTNzxpivjpAMAhV17pCS53o="
+        }
+      ]
+    },
+    {
+      "Route": "img/usuario_03.zp4hwbb3ki.jpg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\usuario_03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J85h2SWiS3oiErkShXYMOTNzxpivjpAMAhV17pCS53o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zp4hwbb3ki"
+        },
+        {
+          "Name": "label",
+          "Value": "img/usuario_03.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J85h2SWiS3oiErkShXYMOTNzxpivjpAMAhV17pCS53o="
+        }
+      ]
+    },
+    {
+      "Route": "img/Whatsapp.a0djx5hflf.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mo03JxywPGha3rJ6XtKipELyx3w/c4ao16deWxkX5to=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a0djx5hflf"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Whatsapp.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mo03JxywPGha3rJ6XtKipELyx3w/c4ao16deWxkX5to="
+        }
+      ]
+    },
+    {
+      "Route": "img/Whatsapp.svg",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\img\\Whatsapp.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mo03JxywPGha3rJ6XtKipELyx3w/c4ao16deWxkX5to=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 16:42:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mo03JxywPGha3rJ6XtKipELyx3w/c4ao16deWxkX5to="
+        }
+      ]
+    },
+    {
+      "Route": "index.4dxgrpvyfl.html",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIRLB91fRpSAxm59TFaIsyKjj/mvqdsKTKqRUue048Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 17:25:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4dxgrpvyfl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIRLB91fRpSAxm59TFaIsyKjj/mvqdsKTKqRUue048Q="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIRLB91fRpSAxm59TFaIsyKjj/mvqdsKTKqRUue048Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 17:25:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIRLB91fRpSAxm59TFaIsyKjj/mvqdsKTKqRUue048Q="
+        }
+      ]
+    },
+    {
+      "Route": "SaborDoBrasil.bx2sjyi9at.mwb",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\SaborDoBrasil.mwb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Meedi8YeqH6PR8yGfWjUvS3w2cnyJkI+EUVuOAQUsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 18:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bx2sjyi9at"
+        },
+        {
+          "Name": "label",
+          "Value": "SaborDoBrasil.mwb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Meedi8YeqH6PR8yGfWjUvS3w2cnyJkI+EUVuOAQUsyw="
+        }
+      ]
+    },
+    {
+      "Route": "SaborDoBrasil.mwb",
+      "AssetFile": "C:\\Users\\Alunos\\Documents\\SaraTrabalho\\SaborDoBrasil\\wwwroot\\SaborDoBrasil.mwb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9783"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Meedi8YeqH6PR8yGfWjUvS3w2cnyJkI+EUVuOAQUsyw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Jun 2025 18:30:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Meedi8YeqH6PR8yGfWjUvS3w2cnyJkI+EUVuOAQUsyw="
+        }
+      ]
     }
   ]
 }
